@@ -1,0 +1,88 @@
+<style>
+.ag-format-container {
+  width: 1142px;
+  margin: 0 auto;
+}
+
+html, body {
+  height: 100%;
+  
+  overflow: hidden;
+}
+
+.ag-fog-block {
+  height: 100%;
+  background: url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/animation-fog/images/bg.jpeg) no-repeat 50% 0;
+}
+.ag-fog {
+  height: 75.625em;
+  /*width: 121.25em;*/
+  width: 100%;
+  background: url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/animation-fog/images/fog.png) 0 100%/6400% 100% no-repeat;
+
+  opacity: 0.3;
+
+  -webkit-animation: an-fog steps(63, start) 8s infinite;
+  -moz-animation: an-fog steps(63, start) 8s infinite;
+  -o-animation: an-fog steps(63, start) 8s infinite;
+  animation: an-fog steps(63, start) 8s infinite;
+}
+
+@-webkit-keyframes an-fog {
+  to {
+    background-position-x: 100%;
+  }
+}
+@-moz-keyframes an-fog {
+  to {
+    background-position-x: 100%;
+  }
+}
+@-o-keyframes an-fog {
+  to {
+    background-position-x: 100%;
+  }
+}
+@keyframes an-fog {
+  to {
+    background-position-x: 100%;
+  }
+}
+
+
+@media only screen and (max-width: 767px) {
+  .ag-format-container {
+    width: 96%;
+  }
+
+}
+
+@media only screen and (max-width: 639px) {
+
+}
+
+@media only screen and (max-width: 479px) {
+
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+  .ag-format-container {
+    width: 750px;
+  }
+
+}
+
+@media (min-width: 980px) and (max-width: 1161px) {
+  .ag-format-container {
+    width: 960px;
+  }
+
+}
+</style>
+
+<div class="ag-fog-block">
+    <div class="ag-fog"></div>
+    <div class="ag-format-container">
+
+    </div>
+  </div>
