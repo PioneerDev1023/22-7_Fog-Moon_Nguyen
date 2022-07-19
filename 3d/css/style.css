@@ -14,6 +14,17 @@ html{
     overflow-x: hidden;
 }
 
+#myVideo {
+    position: fixed;
+    /* right: 0; */
+    /* bottom: 0; */
+    min-width: 100%;
+    /* min-height: 100%; */
+    height: 100%;
+}
+video {
+    object-fit: fill;
+}
 canvas {
     height: auto;
     max-width: 100%;
@@ -25,7 +36,8 @@ canvas {
   }
 body {
     font-family: var(--body-font);
-    background-color: var(--body-bg);
+    /* background-color: var(--body-bg); */
+    /* background: linear-gradient(70deg, #435CC8, #3B8EDE, #27C4F3, #05E8C1); */
     font-size: 18px;
     line-height: 25px;
     padding: 0;
@@ -545,7 +557,7 @@ body::-webkit-scrollbar-thumb:hover {
         justify-content: center !important;
     }
     #header-section {
-        background-color: #5c2cc5 !important;
+        background-color: #247f93 !important;
     }
     #header-section .overlay .navbar-toggler i{
         color: var(--body-color);
@@ -626,7 +638,7 @@ body::-webkit-scrollbar-thumb:hover {
         left: 0;
         width: 100%;
         z-index: 9999;
-        background-color: #00003E;
+        background-color: #247f93;
         box-shadow: 0px 3px 10px 0px rgb(0 0 0 / 30%);
         border-bottom: 1px solid rgb(255 255 255 / 25%);
     }
@@ -721,7 +733,7 @@ body::-webkit-scrollbar-thumb:hover {
     line-height: 27px;
     transition: all 0.5s;
     padding: 11px 32px;
-    background: linear-gradient(351.09deg, #58088b 4.36%, #0087c7 117.5%);
+    background: linear-gradient(351.09deg, #011c22 4.36%, #56c3f7 117.5%);
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
     border-radius: 25px;
     overflow: hidden;
@@ -871,8 +883,9 @@ body::-webkit-scrollbar-thumb:hover {
 #banner-section {
     position: relative;
     padding-top: 247px;
-    background-color: #280B70;
-    background-image: url(../images/banner-bg.png);
+    /* background: linear-gradient(70deg, #435CC8, #3B8EDE, #27C4F3, #05E8C1); */
+    /* background-color: #280B70; */
+    /* background-image: url(../images/banner-bg.png); */
     background-size: 117%;
     background-repeat: no-repeat;
     z-index: 0;
@@ -914,12 +927,16 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 /* Available Game */
+#available-game-section {
+    background: linear-gradient(70deg, #435CC8, #3B8EDE, #27C4F3, #05E8C1);
+}
 #available-game-section .main-container{
-    background: linear-gradient(178.07deg, #4609C3 -9.74%, #0E063D 82.69%);
+    background: linear-gradient(178.07deg, #166581 -9.74%, #0E063D 82.69%);
     box-shadow: 0px -122px 50px rgba(37, 15, 116, 0.560784);
     border-radius: 20px;
     padding: 80px 100px 0;
     margin-bottom: -8px;
+    background: linear-gradient(70deg, #435CC8, #3B8EDE, #27C4F3, #05E8C1);
 }
 #available-game-section .main-container .btn-area{
     margin-top: 40px;
@@ -986,7 +1003,8 @@ body::-webkit-scrollbar-thumb:hover {
 /* How Works */
 #how-works-section{
     position: relative;
-    background-image: url(../images/how-works-bg.png);
+    /* background-image: url(../images/how-works-bg.png); */
+    /* background: linear-gradient(70deg, #435CC8, #3B8EDE, #27C4F3, #05E8C1); */
     background-size: 100%;
     background-repeat: no-repeat;
 }
@@ -1030,7 +1048,7 @@ body::-webkit-scrollbar-thumb:hover {
     text-align: center;
 }
 #how-works-section .single-item .icon-area{
-    background: #4609C3;
+    background: #166581;
     border-radius: 10px;
     display: inline-block;
     padding: 23px 25px;
@@ -1038,7 +1056,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 #how-works-section .single-item .icon-area span{
     position: absolute;
-    background: linear-gradient(351.09deg, #a420f7 4.36%, #2954f0 117.5%);
+    background: linear-gradient(351.09deg, #042830 4.36%, #4b6ff1 117.5%);
     border-radius: 50px;
     font-weight: 500;
     width: 30px;
@@ -1067,7 +1085,8 @@ body::-webkit-scrollbar-thumb:hover {
     background-image: url(../images/tournaments-bg.png);
     background-size: 100%;
     background-repeat: no-repeat;
-    background-color: #100649;
+    /* background-color: #100649; */
+    background: linear-gradient(70deg, #435CC8, #3B8EDE, #27C4F3, #05E8C1);
 }
 #tournaments-section .section-header p{
     /* margin: auto 15%; */
@@ -1106,7 +1125,7 @@ body::-webkit-scrollbar-thumb:hover {
     margin-bottom: 0;
 }
 #tournaments-section .single-item{
-    background-color: #0E063D;
+    /* background-color: #0E063D; */
     padding: 20px;
     border: 1px solid #EDB8FF;
     border-radius: 5px;
@@ -1116,7 +1135,7 @@ body::-webkit-scrollbar-thumb:hover {
     /* text-transform: uppercase; */
 }
 #tournaments-section .single-item .bg{
-    background: #21156E;
+    background: #083e4a;
     border-radius: 5px;
     margin-right: 30px;
     padding: 10px 15px;
@@ -1138,6 +1157,7 @@ body::-webkit-scrollbar-thumb:hover {
     text-align: center;
     padding-bottom: 15px;
     padding-top: 15px;
+    background-color: #083e4a;
 }
 #tournaments-section .single-item .single-box .box-item .head{
     font-size: 10px;
@@ -1152,9 +1172,10 @@ body::-webkit-scrollbar-thumb:hover {
     color: #00FADF;
 }
 #tournaments-section .single-item .prize-area{
-    border: 1px solid #281D61;
     width: 100%;
     height: 100%;
+    border: 1px solid #124e5d;
+    background: rgb(7 57 68 / 70%);
 }
 #tournaments-section .single-item .prize-area .prize{
     font-size: 14px;
@@ -1186,17 +1207,19 @@ body::-webkit-scrollbar-thumb:hover {
 
 /* Counter Section */
 #counter-section {
-    background-image: url(../images/counter-bg.png);
+    /* background-image: url(../images/counter-bg.png); */
+    background: linear-gradient(70deg, #435CC8, #3B8EDE, #27C4F3, #05E8C1);
     background-size: 100%;
     background-repeat: no-repeat;
 }
 #counter-section .single-item {
-    border: 1px solid #EDB8FF;
+    border: 1px solid #124e5d;
     border-radius: 15px;
     padding: 40px 0 33px;
+    background: rgb(7 57 68 / 70%);
 }
 #counter-section .single-item .img-area{
-    background-color: #4609C3;
+    background-color: #166581;
     width: 100px;
     height: 100px;
     border-radius: 50%;
@@ -1227,12 +1250,14 @@ body::-webkit-scrollbar-thumb:hover {
 
 /* Players of the Week */
 #players-week-section{
-    background-image: url(../images/players-week-bg.png);
+    /* background-image: url(../images/players-week-bg.png); */
+    background: linear-gradient(70deg, #435CC8, #3B8EDE, #27C4F3, #05E8C1);
     background-size: cover;
     background-repeat: no-repeat;
 }
 #players-week-section .single-item{
-    background: rgba(14, 6, 61, 0.5);
+    /* background: rgba(14, 6, 61, 0.5); */
+    background: rgb(7 57 68 / 70%);
     box-shadow: -6px -12px 34px rgb(15 23 112 / 20%);
     border-radius: 20px;
     border: 1px solid #EDB8FF;
@@ -1327,6 +1352,7 @@ body::-webkit-scrollbar-thumb:hover {
 #features-section {
     background-image: url(../images/features-bg.png);
     background-repeat: no-repeat;
+    background: linear-gradient(70deg, #435CC8, #3B8EDE, #27C4F3, #05E8C1);
 }
 #features-section .pm-none{
     margin-bottom: -64px;
@@ -1337,7 +1363,7 @@ body::-webkit-scrollbar-thumb:hover {
 #features-section .single-item .img-area{
     width: 110px;
     height: 110px;
-    background: #4609C3;
+    background: #166581;
     border-radius: 55px;
     margin: 0 auto;
     display: flex;
@@ -1350,7 +1376,7 @@ body::-webkit-scrollbar-thumb:hover {
     content: '';
     width: 130px;
     height: 130px;
-    background: #4609C3;
+    background: #166581;
     opacity: 0.4;
     border-radius: 65px;
 }
@@ -1360,10 +1386,14 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 /* Call to Action */
+#call-to-action {
+    background: linear-gradient(70deg, #435CC8, #3B8EDE, #27C4F3, #05E8C1);
+}
 #call-to-action .main-content{
     background: #161D85;
     border-radius: 20px;
     overflow: hidden;
+    background: linear-gradient(70deg, #435CC8, #3B8EDE, #27C4F3, #05E8C1);
 }
 #call-to-action.border-area{
     position: relative;
@@ -1393,9 +1423,10 @@ body::-webkit-scrollbar-thumb:hover {
 #testimonials-section {
     background-image: url(../images/testimonials-bg.png);
     background-repeat: no-repeat;
+    background: linear-gradient(70deg, #435CC8, #3B8EDE, #27C4F3, #05E8C1);
 }
 #testimonials-section .single-item{
-    background: #0E063D;
+    background: #083e4a;
     border-radius: 10px;
     border: 1px solid #EDB8FF;
     padding: 40px 30px;
@@ -1451,7 +1482,7 @@ body::-webkit-scrollbar-thumb:hover {
 #footer-section .footer-top{
     background-image: url(../images/footer-top-bg.png);
     background-repeat: no-repeat;
-    background-color: #0B1766;
+    background-color: #083e4a;
     border-radius: 20px;
     padding: 80px 0;
     margin-top: -180px;
@@ -1464,13 +1495,13 @@ body::-webkit-scrollbar-thumb:hover {
     margin-top: -10px;
 }
 #footer-section .footer-top .subscribe{
-    background: #142A8D;
+    background: #03191e;;
     border: 1px solid #9383F7;
     border-radius: 30px;
     padding: 5px;
 }
 #footer-section .footer-top .subscribe input{
-    background: #142A8D;
+    background: #03191e;;
     border-radius: 30px;
     border: none;
     color: var(--body-color);
@@ -1650,7 +1681,7 @@ body::-webkit-scrollbar-thumb:hover {
     margin: 0 10px;
 }
 #banner-section.inner-banner .bottom-item .draw-counter .time-parameter.left{
-    background: #4609C3;
+    background: #166581;
     border-radius: 5px;
     padding: 8px 10px;
 }
@@ -1671,7 +1702,7 @@ body::-webkit-scrollbar-thumb:hover {
     width: 369px;
     height: 100%;
     transform: skew(-35deg) translateY(-350px);
-    background-color: #4609C3;
+    background-color: #166581;
     z-index: -1;
     left: -20px;
     transition: all 1.5s;
@@ -1717,7 +1748,7 @@ body::-webkit-scrollbar-thumb:hover {
 #banner-section.inner-banner .slick-initialized .slick-prev {
     width: 25px;
     height: 60px;
-    background: #4609C3;
+    background: #166581;
     border-radius: 5px;
     display: inline-block;
 }
@@ -2090,7 +2121,7 @@ body::-webkit-scrollbar-thumb:hover {
 #tournaments-content .sidebar .part-people .right-area{
     width: 50px;
     height: 50px;
-    background: #4609C3;
+    background: #166581;
     font-weight: bold;
     border-radius: 50%;
     display: flex;
@@ -2470,7 +2501,7 @@ body::-webkit-scrollbar-thumb:hover {
     margin-right: 10px;
 }
 #login-reg .login-reg-main{
-    background: #4609C3;
+    background: #166581;
     box-shadow: 0px 15px 76px rgba(0, 0, 0, 0.5);
     border-radius: 10px;
     padding: 40px 30px;
@@ -2561,7 +2592,7 @@ body::-webkit-scrollbar-thumb:hover {
     padding: 240px 0 130px;
 }
 #banner-section.profile .heading-area {
-    background: #4609C3;
+    background: #166581;
     border-radius: 20px 20px 0px 0px;
     padding: 30px;
     margin-bottom: -260px;
@@ -2608,7 +2639,7 @@ body::-webkit-scrollbar-thumb:hover {
     height: 20px;
     top: 5px;
     right: 5px;
-    background: #4609C3;
+    background: #166581;
 }
 #banner-section.profile .heading-area .profile-area .photo::after{
     width: 14px;
@@ -2705,7 +2736,7 @@ body::-webkit-scrollbar-thumb:hover {
     margin-bottom: -40px;
 }
 #featured-products .single-item {
-    background: #4609C3;
+    background: #166581;
     border-radius: 10px;
     padding: 10px;
 }
@@ -2778,7 +2809,7 @@ body::-webkit-scrollbar-thumb:hover {
 #shop-content .shop-details-content::before {
     content: '';
     position: absolute;
-    background: #4609C3;
+    background: #166581;
     top: 0;
     width: 100%;
     height: 100%;
@@ -3013,7 +3044,7 @@ body::-webkit-scrollbar-thumb:hover {
     margin-bottom: 20px;
 }
 #products-content .comments .comment-form{
-    background: #4609C3;
+    background: #166581;
     border-radius: 10px;
     padding: 40px 30px;
 }
@@ -3084,7 +3115,7 @@ body::-webkit-scrollbar-thumb:hover {
     display: inline-table;
 }
 #shop-cart-section .table thead{
-    background: #4609C3;
+    background: #166581;
     border-radius: 5px;
     padding: 20px;
     margin-bottom: 30px;
@@ -3144,7 +3175,7 @@ body::-webkit-scrollbar-thumb:hover {
     background: #120749;
 }
 #shop-cart-section .right-sidebar{
-    background: #4609C3;
+    background: #166581;
     border-radius: 10px;
 }
 #shop-cart-section .right-sidebar .top-area h5{
@@ -3247,7 +3278,7 @@ body::-webkit-scrollbar-thumb:hover {
     margin-top: 30px;
 }
 #checkout .right-sidebar{
-    background: #4609C3;
+    background: #166581;
     border-radius: 10px;
 }
 #checkout .right-sidebar .top-area h5{
@@ -3356,7 +3387,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 /* Contact Page */
 #contact-section form{
-    background: #4609C3;
+    background: #166581;
     border-radius: 10px;
     padding: 30px;
 }
@@ -3420,7 +3451,7 @@ body::-webkit-scrollbar-thumb:hover {
     background-position: top;
 }
 #deal-of-day .main-content{
-    background: #4609C3;
+    background: #166581;
     border-radius: 10px;
     padding: 40px 30px;
     position: relative;
@@ -3563,7 +3594,7 @@ body::-webkit-scrollbar-thumb:hover {
     margin-bottom: -7px;
 }
 #all-trophies .statistics-area .total-area{
-    background: #4609C3;
+    background: #166581;
     border-radius: 10px;
     padding: 30px;
 }
@@ -3607,7 +3638,7 @@ body::-webkit-scrollbar-thumb:hover {
     padding: 0 10px;
 }
 #all-trophies .statistics-area .sidebar-area {
-    background: #4609C3;
+    background: #166581;
     border-radius: 10px;
     padding: 30px 20px;
     margin-bottom: 30px;
